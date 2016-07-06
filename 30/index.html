@@ -4,17 +4,63 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<style>
+	.clear{
+		clear: both;
+	}
      #dv{
      	width: 100px;
      	height: 100px;
      	border: 1px solid;
      	border-radius:50px 50px 50px 50px;
+     	background: yellow;
+     }
+     .yuan{
+     	width: 20px;
+     	height: 20px;
+     	border: 1px solid;
+     	border-radius:49px 32px 52px 32px;
+     	float: left;
+     	background: yellow;
+     }
+     .yuan1{
+     	width: 20px;
+     	height: 20px;
+     	border: 1px solid;
+     	border-radius:32px 49px 32px 49px;
+     	float: right;
+     	background: yellow;
+     }
+     .left{
+     	width: 10px;
+     	height: 10px;
+     	border: 1px solid;
+     	border-radius:50px 50px 50px 50px;
+     	background:white;
+     	position: absolute;
+     	top:50px;
+     	left: 30px;
+     }
+     .right{
+     	width: 10px;
+     	height: 10px;
+     	border: 1px solid;
+     	border-radius:50px 50px 50px 50px;
+     	background:white;
+     	position: absolute;
+     	top:50px;
+     	left: 70px;
      }
 	</style>
 </head>
 <body>
 	<div id="dv">
+		<div class="yuan"></div>
+		<div class="yuan1"></div>
+		<div class="clear"></div>
+		
 		
 	</div>
+	<div class="left"></div>
+	<div class="right"></div>
 </body>
 </html>
