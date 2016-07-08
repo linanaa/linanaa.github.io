@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>流动布局</title>
+	<style>
+	
+    *{
+    	margin: 0;
+    	padding: 0;
+    }
+      .a,.b,.c{
+      	width:100%;
+      	height: 40px;
+      	float: left;
+
+      }
+      .a{
+      	background: red;
+      }
+       .b{
+      	background: blue;
+      }
+       .c{
+      	background: green;
+      }
+      @media(min-width: 350px){
+          .clearfix:{
+          	content: "";
+          	display: table;
+          	clear: both;
+      }
+      .a{
+      	background: red;
+      	width: 50%;
+      	height: 40px;
+      	float: left;
+      }
+      .b{
+      	background: blue;
+      	width: 50%;
+      	height: 40px;
+      	float: left;
+      }
+      .c{
+      	background: green;
+      	width: 100%;
+      	height: 40px;
+      }
+	  }
+      @media(min-width: 800px){
+      .clearfix{
+      	clear: none;
+      }
+      .a{
+      	background: red;
+      	width: 33.333333%;
+      	height: 40px;
+      	float: left;
+      }
+      .b{
+      	background: blue;
+      	width: 33.333333%;
+      	height: 40px;
+      	float: left;
+      }
+      .c{
+      	background: green;
+      	width: 33.333333%;
+      	height: 40px;
+      	float: left;
+      }
+      }
+	</style>
+</head>
+<body>
+	<div class="box">
+		<ul>
+			<li class="a"></li>
+			<li class="b"></li>
+			<li class="c cleafix"></li>
+		</ul>
+	</div>
+</body>
+</html>
